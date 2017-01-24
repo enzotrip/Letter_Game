@@ -6,6 +6,7 @@ import org.junit.Test;
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.assertFalse;
 
+
 /**
  * Unit test sample for Dictionary.
  */
@@ -15,12 +16,13 @@ public class DictionaryTest {
 
     @Before
     public void setup() {
-        //TODO
+    	dictionary = new Dictionary();
     }
 
     @Test
     public void testIsWord() {
-        assertTrue(dictionary.isWord("maman"));
-        assertFalse(dictionary.isWord("namam"));
+    	//System.out.println(aListWords.get(aListWords.size()-1));
+        assertTrue(dictionary.isWord("zoo"));
+        assertFalse(dictionary.isWord("lol"));
     }
 }
