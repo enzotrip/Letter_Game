@@ -109,9 +109,11 @@ public class LetterGameEngine {
 						if(p1Play) {
 							p1.addWordList(listWordP1, word);
 							i1++;
+							p1Play = false;
 						} else {
 							p2.addWordList(listWordP2, word);
 							i2++;
+							p1Play = false;
 						}
 					} else System.out.println("Erreur");
 				} else System.out.println("Erreur");
