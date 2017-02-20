@@ -35,5 +35,22 @@ public class Letter {
 	public void setNbOccurences(int nbOccurences) {
 		this.nbOccurences = nbOccurences;
 	}
+	
+	public void replaceLetter(char value) {
+		switch(value) {
+		case 'à':
+			this.value = 'a';
+			break;
+		case 'é': case 'è': case 'ê':
+			this.value = 'e';
+			break;
+		case 'î':
+			this.value = 'i';
+			break;
+		case 'ô':
+			this.value = 'o';
+			break;
+		}
+	}
 
 }
