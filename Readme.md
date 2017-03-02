@@ -9,6 +9,6 @@
 
 Entrez la ligne de commande dans le répertoire où se situe votre pom.xml :
 ```
-mvn package
+sudo mvn package
 sudo java -cp target/LetterGame-1.0.0-SNAPSHOT.jar fr.esiea.unique.binome.name.app.App
 ```
